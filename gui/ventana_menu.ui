@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>menu ventana</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Fondo general */
+QMainWindow, QWidget {
+    background-color: #121212;   /* fondo oscuro uniforme */
+    color: #EAEAEA;              /* texto claro */
+}
+
+/* Barra de menú */
+QMenuBar {
+    background-color: #1A1A1A;
+    color: #EAEAEA;
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* Items del menú */
+QMenuBar::item {
+    background: transparent;
+    padding: 5px 15px;
+}
+
+/* Hover en barra */
+QMenuBar::item:selected {
+    background-color: #00D084;  /* acento */
+    color: #121212;
+}
+
+/* Menús desplegables */
+QMenu {
+    background-color: #1E1E1E;
+    color: #EAEAEA;
+    border: 1px solid #2C2C2C;
+    font-size: 16px;
+}
+
+/* Items */
+QMenu::item {
+    padding: 8px 20px;
+}
+
+/* Hover en items */
+QMenu::item:selected {
+    background-color: #00D084;
+    color: #121212;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>46</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuejercicios">
+    <property name="title">
+     <string>ejercicios</string>
+    </property>
+    <addaction name="actioncalculadora"/>
+    <addaction name="separator"/>
+    <addaction name="actioncalculadora_psp_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionsalir"/>
+   </widget>
+   <addaction name="menuejercicios"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionsalir">
+   <property name="text">
+    <string>salir</string>
+   </property>
+  </action>
+  <action name="actioncalculadora">
+   <property name="text">
+    <string>calculadora psp 1</string>
+   </property>
+  </action>
+  <action name="actioncalculadora_psp_2">
+   <property name="text">
+    <string>calculadora psp 2</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

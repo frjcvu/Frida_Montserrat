@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog, QWidget {
+    QWidget {
+    background-color: #121212; /* negro suave */
+}
+
+/* QLabel */
+QLabel {
+    color: #EAEAEA;
+    font-weight: bold;
+    font-size: 28pt;
+}
+
+/* Botones */
+QPushButton {
+    background-color: #1F1F1F;
+    color: #00D084;
+    border: 2px solid #00D084;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+/* Hover botón */
+QPushButton:hover {
+    background-color: #00D084;
+    color: #121212;
+}
+
+/* Click botón */
+QPushButton:pressed {
+    background-color: #009e63;
+}
+
+/* QLineEdit */
+QLineEdit {
+    background-color: #1E1E1E;
+    color: #EAEAEA;
+    border: 2px solid #2C2C2C;
+    border-radius: 8px;
+    padding: 6px;
+    selection-background-color: #00D084;
+    selection-color: #121212;
+}
+
+/* Focus */
+QLineEdit:focus {
+    border: 2px solid #00D084;
+    background-color: #252525;
+}
+
+/* Hover */
+QLineEdit:hover {
+    border: 2px solid #3A3A3A;
+}
+
+/* Placeholder */
+QLineEdit::placeholder {
+    color: #888888;
+}
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>70</y>
+      <width>571</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="x2">
+           <property name="font">
+            <font>
+             <pointsize>36</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>    x   </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="valorx2">
+           <property name="styleSheet">
+            <string notr="true">QDialog, QWidget {
+    /* Fondo global */
+QMainWindow, QWidget {
+    background-color: #121212;
+    color: #EAEAEA;
+}
+
+/* QLabel */
+QLabel {
+    color: #EAEAEA;
+    font-weight: bold;
+    font-size: 28pt;
+}
+
+/* Botones */
+QPushButton {
+    background-color: #1F1F1F;
+    color: #00D084;
+    border: 2px solid #00D084;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+/* Hover */
+QPushButton:hover {
+    background-color: #00D084;
+    color: #121212;
+}
+
+/* Click */
+QPushButton:pressed {
+    background-color: #009e63;
+}
+
+/* Inputs */
+QLineEdit {
+    background-color: #1E1E1E;
+    color: #EAEAEA;
+    border: 2px solid #2C2C2C;
+    border-radius: 8px;
+    padding: 6px;
+    selection-background-color: #00D084;
+    selection-color: #121212;
+}
+
+/* Focus */
+QLineEdit:focus {
+    border: 2px solid #00D084;
+    background-color: #252525;
+}
+
+/* Hover */
+QLineEdit:hover {
+    border: 2px solid #3A3A3A;
+}
+
+/* Placeholder */
+QLineEdit::placeholder {
+    color: #888888;
+}
+}</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="dof2">
+           <property name="font">
+            <font>
+             <pointsize>36</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>   DOF   </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="valordof2"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="botoncalcular2">
+       <property name="text">
+        <string>calcular</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
